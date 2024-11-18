@@ -1,0 +1,25 @@
+<!-- contact.jinja -->
+<article class="contact" data-page="thesis">
+
+  <header>
+    <h2 class="fr h2 article-title">{{fr.thes}}</h2>
+    <h2 class="en h2 article-title">{{en.thes}}</h2>
+  </header>
+
+  <!--- PRESENTATION --->
+  <section class="fr about-text">
+    <p>{{fr.presentation}}</p>
+  </section>
+
+  <section class="en about-text">
+    <p>{{en.presentation}}</p>
+  </section>
+
+  <style>
+    .pdfobject-container { height: 900px; border: 1px solid #ccc; }
+  </style>
+  <div id="my-pdf"></div>
+  <script src="https://unpkg.com/pdfobject"></script>
+  <script>PDFObject.embed("./assets/CEC_MSCyberSCID_thesis_Baptiste_NOUAILHAC.pdf", "#my-pdf");</script>
+
+</article>

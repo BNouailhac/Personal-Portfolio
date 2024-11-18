@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta-->
+  <title>Nouailhac Baptiste</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional thesis produced in 6 months during an internship at the Agence Monégasque de Sécurité Numérique (AMSN) and written in Latex. Subject: ‘How to set up an automated tool for generating intrusion detection rules’.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://BNouailhac.github.io">
+  <meta property="og:title" content="Nouailhac Baptiste | Cybersecurity Engineer">
+  <meta property="og:description" content="Professional thesis produced in 6 months during an internship at the Agence Monégasque de Sécurité Numérique (AMSN) and written in Latex. Subject: ‘How to set up an automated tool for generating intrusion detection rules’.">
+  <meta property="og:image" content="./config/assets/avatars/my-avatar.png">
+  <meta property="og:image:secure_url" content="./config/assets/avatars/my-avatar.png">
+  <meta property="og:site_name" content="Nouailhac Baptiste | Cybersecurity Engineer">
+  <meta name="twitter:card" content="photo">
+  <meta name="twitter:creator" content="@BNouailhac">
+  <meta name="twitter:title" content="Nouailhac Baptiste | Cybersecurity Engineer">
+  <meta name="twitter:description" content="Professional thesis produced in 6 months during an internship at the Agence Monégasque de Sécurité Numérique (AMSN) and written in Latex. Subject: ‘How to set up an automated tool for generating intrusion detection rules’.">
+  <meta name="twitter:image" content="./config/assets/avatars/my-avatar.png">
+  <meta name="twitter:image:width" content="200">
+  <meta name="twitter:image:height" content="200">
+  <meta name="keywords" content="Nouailhac Baptiste, python, flutter, git, firebase, pandas, mongodb, dart, html, jupyter, linux" />
+  <link href="https://BNouailhac.github.io" rel="canonical">
+  <!--meta-->
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <!-- sidebar.jinja -->
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure>
+      <img  class="avatar-box" src="./config/assets/avatars/my-avatar.png" alt="Nouailhac Baptiste" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="Nouailhac Baptiste">Nouailhac Baptiste</h1>
+
+      <p class="fr title">Ingénieur Cybersécurité</p>
+      <p class="en title">Cybersecurity Engineer</p>
+    </div>
+
+    <div class="lang">
+      <div style="cursor: pointer;" onclick="changeLang('fr')">
+        <img src="./assets/images/fr.png" alt="client logo" width="30" height="30">
+      </div>
+
+      <div style="cursor: pointer;" onclick="changeLang('en')">
+        <img src="./assets/images/en.png" alt="client logo" width="30" height="30">
+      </div>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+  <div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">EMAIL</p>
+          <p class="en contact-title">EMAIL</p>
+
+          <p style="--fs-7: 10px;" class="contact-link">baptiste.nouailhac@pm.me</p>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">ANNIVERSAIRE</p>
+          <p class="en contact-title">BIRTHDAY</p>
+
+          <time datetime="11 mars 2000">11 mars 2000</time>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">LOCALISATION</p>
+          <p class="en contact-title">LOCATION</p>
+
+          <address>Monaco</address>
+        </div>
+
+      </li>
+
+      <li class="fr">
+
+        <div class="icon-cv" onclick="getCV('fr')">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <p class="contact-cv">Télécharger mon CV</p>
+          <ion-icon name="download-outline"></ion-icon>
+        </div>
+
+      </li>
+
+      <li class="en">
+
+        <div class="icon-cv" onclick="getCV('en')">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <p class="contact-cv">Download my CV</p>
+          <ion-icon name="download-outline"></ion-icon>
+        </div>
+
+      </li>
+
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+
+      <li class="social-item">
+        <a href="https://www.linkedin.com/in/baptiste-nouailhac" class="social-link" , target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a href="https://github.com/BNouailhac" class="social-link" , target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Detect the browser's language
+      const userLanguage = navigator.language || navigator.userLanguage;
+      const ENelements = document.querySelectorAll(".en");
+      const FRelements = document.querySelectorAll(".fr");
+      if (userLanguage == "fr-FR") {
+        ENelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+      } else {
+        ENelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+      }
+    });
+    function changeLang(lang) {
+      const ENelements = document.querySelectorAll(".en");
+      const FRelements = document.querySelectorAll(".fr");
+      if (lang == "fr"){
+        ENelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+      } else {
+        ENelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+      }
+    }
+    function getCV(lg) {
+      var cvFileUrl = "";
+      if (lg == "fr")
+        cvFileUrl = "./assets/CVfr.pdf"
+      else
+        cvFileUrl = "./assets/CVen.pdf"
+      
+      console.log(cvFileUrl);
+      const link = document.createElement("a");
+      link.href = cvFileUrl;
+      link.download = "CV_Baptiste_NOUAILHAC.pdf"; // Name of the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <!-- navbar.jinja -->
+<nav class="navbar">
+
+  <ul class="navbar-list">
+
+    <li class="navbar-item">
+      <button class="fr navbar-link" data-nav-link>CV</button>
+      <button class="en navbar-link" data-nav-link>Resume</button>
+    </li>
+
+    <li class="navbar-item">
+      <button class="fr navbar-link" data-nav-link>Thèse</button>
+      <button class="en navbar-link" data-nav-link>Thesis</button>
+    </li>
+
+  </ul>
+
+</nav>
+
+      <!--
+        - #RESUME
+      -->
+
+      <!-- resume.jinja -->
+<article class="resume active" data-page="resume">
+
+  <header>
+    <h2 class="fr h2 article-title">CV</h2>
+    <h2 class="en h2 article-title">Resume</h2>
+  </header>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+
+      <h3 class="fr h3">Expérience</h3>
+      <h3 class="en h3">Experience</h3>
+    </div>
+
+    <ol class="fr timeline-list">
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://amsn.gouv.mc/" target="_blank">
+          <img src="./assets/images/amsn.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Ingénieur Cybersécurité</h4>
+        </a>
+
+        <span>04/2024 - 10/2024</span>
+
+        <p class="timeline-text">
+          Stage de 6 mois réalisé dans le cadre de mon Mastère Spécialisé (CYBERSCID) à l’agence national de cybersécurité de l’Etat de Monaco (équivalent de l’ANSSI Français). Réalisation de missions de développement en soutien des capacités opérationnelles du CERT-MC (Développement Python, usage de MISP et Suricata).
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://livmeds.com/" target="_blank">
+          <img src="./assets/images/livmed.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Développeur Full-stack</h4>
+        </a>
+
+        <span>08/2022 - 08/2023</span>
+
+        <p class="timeline-text">
+          6 mois de stage et 7 mois de CDD réalisés auprès de la startup Livmed's dans le cadre de ma cinquième et dernière année d'études à Epitech. Dévelopement en javascript sur les interfaces web, mobile et backend de la société (ReactJS - ReactNative - NodeJS)
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://www.syselio.com/" target="_blank">
+          <img src="./assets/images/syselio.jpg" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Développeur Full-stack</h4>
+        </a>
+
+        <span>2019 - 2021</span>
+
+        <p class="timeline-text">
+          2 stages de 6 mois réalisés entre 2019 et 2021 pour la société de prestation de service informatique monégasque Syselio. Dévelopement en javascript et ASP.NET sur les sites en ligne de la société
+        </p>
+
+      </li>
+
+      
+
+    </ol>
+
+    <ol class="en timeline-list">
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://amsn.gouv.mc/" target="_blank">
+          <img src="./assets/images/amsn.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Cybersecurity Engineer</h4>
+        </a>
+
+        <span>04/2024 - 10/2024</span>
+
+        <p class="timeline-text">
+          6-month internship as part of my Specialised Masters (CYBERSCID) at the national cybersecurity agency of the State of Monaco (equivalent to the French ANSSI). Development missions to support the CERT-MC's operational capabilities (Python development, use of MISP and Suricata).
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://livmeds.com/" target="_blank">
+          <img src="./assets/images/livmed.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Full-stack Developer</h4>
+        </a>
+
+        <span>08/2022 - 08/2023</span>
+
+        <p class="timeline-text">
+          6-month internship and 6-month fixed-term contract with the Livmed's startup as part of my fifth and final year of studies at Epitech. Javascript development on the company's web, mobile and backend interfaces (ReactJS - ReactNative - NodeJS)
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="https://www.syselio.com/" target="_blank">
+          <img src="./assets/images/syselio.jpg" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Full-stack Developer</h4>
+        </a>
+
+        <span>2019 - 2021</span>
+
+        <p class="timeline-text">
+          2 six-month internships between 2019 and 2021 for the Monegasque IT services company Syselio. Development in Javascript and ASP.NET of the company's online sites
+        </p>
+
+      </li>
+
+      
+
+    </ol>
+
+  </section>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="school-outline"></ion-icon>
+      </div>
+
+      <h3 class="fr h3">Éducation</h3>
+      <h3 class="en h3">Education</h3>
+    </div>
+
+    <ol class="fr timeline-list">
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="https://www.centrale-mediterranee.fr/fr/formation/formations-expertes/mastere-specialiser-cybersecurite-systemes-complexes-industrie/" target="_blank">
+          <img src="./assets/images/cea.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Mastère Spécialisé® Cybersécurité systèmes complexes Industrie et Défense (CYBERSCID)</h4>
+        </a>
+        
+
+        <span>09/2023 - 10/2024</span>
+
+        <p class="timeline-text">
+          En partenariat avec le Commissariat à l’Énergie Atomique et aux Énergies Alternatives (CEA) et le Commandement de la Cyberdéfense (COMCYBER). Cette formation post-master (bac +6, certifiée par l’ANSSI) est dédiée aux problématiques de cybersécurité dans les systèmes de l’industrie et de la Défense.
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="http://en.njtu.edu.cn/" target="_blank">
+          <img src="./assets/images/bjtu.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Graduate Student Program</h4>
+        </a>
+        
+
+        <span>08/2021 - 02/2022</span>
+
+        <p class="timeline-text">
+          Dans le cadre de ma quatrième année d'études à EPITECH, j'ai eu l'opportunité d'étudier pendant un semestre à l'école chinoise de Pékin 'Beijing Jiaotong University'. Ce fut l'occasion pour moi de développer de nombreuses compétences informatiques avancées dans un environnement nouveau et enrichissant.
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="https://www.epitech.eu/programme-grande-ecole-informatique/" target="_blank">
+          <img src="./assets/images/epitech.jpg" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Titre d’expert en technologies de l’information (Bac+5)</h4>
+        </a>
+        
+
+        <span>2018 - 2023</span>
+
+        <p class="timeline-text">
+          Un cursus comprenant près de 80 projets, permettant d’acquérir des compétences très solides dans tous les domaines de l’informatique. Une formation diplômante spécialisée dans le développement logiciel
+        </p>
+
+      </li>
+
+      
+
+    </ol>
+
+    <ol class="en timeline-list">
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="https://www.centrale-mediterranee.fr/fr/formation/formations-expertes/mastere-specialiser-cybersecurite-systemes-complexes-industrie" target="_blank">
+          <img src="./assets/images/cea.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Mastère Spécialisé® Cybersecurity for complex systems Industry and Defence (CYBERSCID)</h4>
+        </a>
+        
+
+        <span>09/2023 - 10/2024</span>
+
+        <p class="timeline-text">
+          In partnership with the French Atomic Energy and Alternative Energies Commission (CEA) and the Cyberdefence Command (COMCYBER). This post-master's course (bac +6, certified by the ANSSI) is dedicated to cybersecurity issues in industrial and defence systems.
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="http://en.njtu.edu.cn/" target="_blank">
+          <img src="./assets/images/bjtu.png" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Graduate Student Program</h4>
+        </a>
+        
+
+        <span>08/2021 - 02/2022</span>
+
+        <p class="timeline-text">
+          As part of my fourth year of studies at EPITECH, I had the opportunity to study for a semester at Beijing Jiaotong University. This was an opportunity for me to develop a number of advanced IT skills in a new and enriching environment.
+        </p>
+
+      </li>
+
+      
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="https://www.epitech.eu/programme-grande-ecole-informatique/" target="_blank">
+          <img src="./assets/images/epitech.jpg" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">Information technology expert qualification (Master degree)</h4>
+        </a>
+        
+
+        <span>2018 - 2023</span>
+
+        <p class="timeline-text">
+          A curriculum comprising almost 80 projects, enabling you to acquire very solid skills in all areas of IT. A degree course specialising in software development
+        </p>
+
+      </li>
+
+      
+
+    </ol>
+
+  </section>
+
+  <!--
+          - clients
+        -->
+  <section class="fr testimonials">
+
+    <h3 class="h3 clients-title">Technologies</h3>
+
+    <ul class="clients-list has-scrollbar">
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/python.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/flutter.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/git.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/firebase.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/pandas.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/mongodb.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/dart.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/html.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/jupyter.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/linux.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+    </ul>
+
+  </section>
+
+  <section class="en testimonials">
+
+    <h3 class="h3 clients-title">Tech Experience</h3>
+
+    <ul class="clients-list has-scrollbar">
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/python.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/flutter.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/git.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/firebase.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/pandas.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/mongodb.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/dart.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/html.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/jupyter.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+      <li class="clients-item">
+        <img src="./config/assets/icons/linux.svg" alt="client logo" width="50" height="50">
+      </li>
+
+      
+
+    </ul>
+
+  </section>
+
+  <!--
+    - testimonials
+  -->
+  <section class="fr testimonials">
+
+    <h3 class="h3 testimonials-title">Soft Skills</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/bolt.svg" alt="Apprendre vite" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Apprendre vite</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Je suis capable d'acquérir rapidement de nouvelles connaissances et de m'adapter à des environnements technologiques changeants.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/user.svg" alt="Travail d'équipe" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Travail d'équipe</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Je collabore efficacement à des projets multidisciplinaires et je communique clairement avec les membres de l'équipe.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/gear.svg" alt="Résolution de problèmes" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Résolution de problèmes</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Je suis créatif et efficace dans l'identification et la résolution des problèmes techniques.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/comment.svg" alt="Communication efficace" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Communication efficace</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Je suis capable de transmettre des idées de manière claire et concise, tant sur le plan technique que non technique.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      < </ul>
+
+  </section>
+
+  <section class="en testimonials">
+
+    <h3 class="h3 testimonials-title">Soft Skills</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/bolt.svg" alt="Fast Learner" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Fast Learner</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              I have the ability to quickly acquire new knowledge and adapt to changing technological environments.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/user.svg" alt="Teamwork" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Teamwork</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              I collaborate effectively in multidisciplinary projects and communicate clearly with team members.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/gear.svg" alt="Problem Solving" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Problem Solving</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              I am creative and efficient in identifying and solving technical problems.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./config/assets/icons/comment.svg" alt="Effective Communication" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Effective Communication</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              I have the skill to convey ideas clearly and concisely, both technically and non-technically.
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      
+
+      < </ul>
+
+  </section>
+
+  <!--
+          - testimonials modal
+        -->
+
+  <div class="modal-container" data-modal-container>
+
+    <div class="overlay" data-overlay></div>
+
+    <section class="testimonials-modal">
+
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img alt="Nouailhac Baptiste" width="80" data-modal-img>
+        </figure>
+
+        <img src="./assets/images/icon-quote.svg" alt="quote icon">
+      </div>
+
+      <div class="modal-content">
+
+        <h4 class="fr h3 modal-title" data-modal-title>Nouailhac Baptiste</h4>
+        <h4 class="en h3 modal-title" data-modal-title>Nouailhac Baptiste</h4>
+
+        
+
+        <div data-modal-text>
+          <p>
+            
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- contact.jinja -->
+<article class="contact" data-page="thesis">
+
+  <header>
+    <h2 class="fr h2 article-title">Thèse</h2>
+    <h2 class="en h2 article-title">Thesis</h2>
+  </header>
+
+  <!--- PRESENTATION --->
+  <section class="fr about-text">
+    <p>Thèse professionnelle réalisée en 6 mois lors d'un stage à l'Agence Monégasque de Sécurité Numérique (AMSN) et rédigée en langage Latex. Sujet : « Comment mettre en place un outil automatisé de génération de règles de détection d'intrusion ? »</p>
+  </section>
+
+  <section class="en about-text">
+    <p>Professional thesis produced in 6 months during an internship at the Agence Monégasque de Sécurité Numérique (AMSN) and written in Latex. Subject: ‘How to set up an automated tool for generating intrusion detection rules’.</p>
+  </section>
+
+  <style>
+    .pdfobject-container { height: 900px; border: 1px solid #ccc; }
+  </style>
+  <div id="my-pdf"></div>
+  <script src="https://unpkg.com/pdfobject"></script>
+  <script>PDFObject.embed("./assets/CEC_MSCyberSCID_thesis_Baptiste_NOUAILHAC.pdf", "#my-pdf");</script>
+
+</article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <!-- portfolio.jinja -->
+<article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <div class="filter-select-box">
+
+      <button class="filter-select" data-select>
+
+        <div class="select-value" data-selecct-value>Select category</div>
+
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+
+      </button>
+
+      <ul class="select-list">
+
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+
+        
+
+      </ul>
+
+    </div>
+
+    <ul class="fr project-list">
+
+      
+
+    </ul>
+
+    <ul class="en project-list">
+
+      
+
+    </ul>
+
+  </section>
+
+</article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

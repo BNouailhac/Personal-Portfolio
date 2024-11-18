@@ -1,0 +1,92 @@
+<!-- portfolio.jinja -->
+<article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <div class="filter-select-box">
+
+      <button class="filter-select" data-select>
+
+        <div class="select-value" data-selecct-value>Select category</div>
+
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+
+      </button>
+
+      <ul class="select-list">
+
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+
+        {% for category in categories %}
+        <li class="select-item">
+          <button data-select-item>{{category}}</button>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+
+    <ul class="fr project-list">
+
+      {% for project in fr.project %}
+
+      <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+        <a href="{{project.url}}" target="_blank">
+
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+
+            <img src="{{project.image}}" alt="{{project.title}}" loading="lazy">
+          </figure>
+
+          <h3 class="project-title">{{project.title}}</h3>
+
+          <p class="project-category">{{project.category}}</p>
+
+        </a>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+    <ul class="en project-list">
+
+      {% for project in en.project %}
+
+      <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+        <a href="{{project.url}}" target="_blank">
+
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+
+            <img src="{{project.image}}" alt="{{project.title}}" loading="lazy">
+          </figure>
+
+          <h3 class="project-title">{{project.title}}</h3>
+
+          <p class="project-category">{{project.category}}</p>
+
+        </a>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+</article>

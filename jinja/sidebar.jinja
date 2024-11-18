@@ -1,0 +1,191 @@
+<!-- sidebar.jinja -->
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure>
+      <img  class="avatar-box" src="{{en.avatar}}" alt="{{en.name}}" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="{{en.name}}">{{en.name}}</h1>
+
+      <p class="fr title">{{fr.rol}}</p>
+      <p class="en title">{{en.rol}}</p>
+    </div>
+
+    <div class="lang">
+      <div style="cursor: pointer;" onclick="changeLang('fr')">
+        <img src="./assets/images/fr.png" alt="client logo" width="30" height="30">
+      </div>
+
+      <div style="cursor: pointer;" onclick="changeLang('en')">
+        <img src="./assets/images/en.png" alt="client logo" width="30" height="30">
+      </div>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+  <div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">{{fr.emailtitle}}</p>
+          <p class="en contact-title">{{en.emailtitle}}</p>
+
+          <p style="--fs-7: 10px;" class="contact-link">{{en.email}}</p>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">{{fr.birthdaytitle}}</p>
+          <p class="en contact-title">{{en.birthdaytitle}}</p>
+
+          <time datetime="{{en.birthday}}">{{en.birthday}}</time>
+        </div>
+
+      </li>
+
+      <li class="contact-item">
+
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="fr contact-title">{{fr.locationtitle}}</p>
+          <p class="en contact-title">{{en.locationtitle}}</p>
+
+          <address>{{en.location}}</address>
+        </div>
+
+      </li>
+
+      <li class="fr">
+
+        <div class="icon-cv" onclick="getCV('fr')">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <p class="contact-cv">{{fr.cvdownload}}</p>
+          <ion-icon name="download-outline"></ion-icon>
+        </div>
+
+      </li>
+
+      <li class="en">
+
+        <div class="icon-cv" onclick="getCV('en')">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <p class="contact-cv">{{en.cvdownload}}</p>
+          <ion-icon name="download-outline"></ion-icon>
+        </div>
+
+      </li>
+
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+
+      <li class="social-item">
+        <a href="https://www.linkedin.com/in/baptiste-nouailhac" class="social-link" , target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a href="https://github.com/BNouailhac" class="social-link" , target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Detect the browser's language
+      const userLanguage = navigator.language || navigator.userLanguage;
+      const ENelements = document.querySelectorAll(".en");
+      const FRelements = document.querySelectorAll(".fr");
+      if (userLanguage == "fr-FR") {
+        ENelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+      } else {
+        ENelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+      }
+    });
+    function changeLang(lang) {
+      const ENelements = document.querySelectorAll(".en");
+      const FRelements = document.querySelectorAll(".fr");
+      if (lang == "fr"){
+        ENelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+      } else {
+        ENelements.forEach(element => {
+            element.classList.remove("hide");
+            element.classList.add("show");
+        });
+        FRelements.forEach(element => {
+            element.classList.remove("show");
+            element.classList.add("hide");
+        });
+      }
+    }
+    function getCV(lg) {
+      var cvFileUrl = "";
+      if (lg == "fr")
+        cvFileUrl = "./assets/CVfr.pdf"
+      else
+        cvFileUrl = "./assets/CVen.pdf"
+      
+      console.log(cvFileUrl);
+      const link = document.createElement("a");
+      link.href = cvFileUrl;
+      link.download = "CV_Baptiste_NOUAILHAC.pdf"; // Name of the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</aside>

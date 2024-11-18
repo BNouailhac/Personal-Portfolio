@@ -1,0 +1,128 @@
+### ABOUT ###
+name = "Nouailhac Baptiste"
+rol = "Ingénieur Cybersécurité"
+conta = "Voir informations"
+emailtitle = "EMAIL"
+email = "baptiste.nouailhac@pm.me"
+birthdaytitle = "ANNIVERSAIRE"
+birthday = "11 mars 2000"
+locationtitle = "LOCALISATION"
+location = "Monaco"
+avatar = "./config/assets/avatars/my-avatar.png"
+username = "BNouailhac" # <-- github user name
+cvdownload = "Télécharger mon CV"
+cvlink = "./assets/CV.pdf"
+cvname = "CV.pdf"
+
+presentation = "Thèse professionnelle réalisée en 6 mois lors d'un stage à l'Agence Monégasque de Sécurité Numérique (AMSN) et rédigée en langage Latex. Sujet : « Comment mettre en place un outil automatisé de génération de règles de détection d'intrusion ? »"
+
+resu = "CV"
+exp = "Expérience"
+edu = "Éducation"
+thes = "Thèse"
+
+### RESUME ###
+############## Education config #################
+#################################################
+[[education]]
+title = "Titre d’expert en technologies de l’information (Bac+5)"
+link = "https://www.epitech.eu/programme-grande-ecole-informatique/"
+icon = "./assets/images/epitech.jpg"
+timeline = "2018 - 2023"
+description = "Un cursus comprenant près de 80 projets, permettant d’acquérir des compétences très solides dans tous les domaines de l’informatique. Une formation diplômante spécialisée dans le développement logiciel"
+
+[[education]]
+title = "Graduate Student Program"
+link = "http://en.njtu.edu.cn/"
+icon = "./assets/images/bjtu.png"
+timeline = "08/2021 - 02/2022"
+description = "Dans le cadre de ma quatrième année d'études à EPITECH, j'ai eu l'opportunité d'étudier pendant un semestre à l'école chinoise de Pékin 'Beijing Jiaotong University'. Ce fut l'occasion pour moi de développer de nombreuses compétences informatiques avancées dans un environnement nouveau et enrichissant."
+
+[[education]]
+title = "Mastère Spécialisé® Cybersécurité systèmes complexes Industrie et Défense (CYBERSCID)"
+link = "https://www.centrale-mediterranee.fr/fr/formation/formations-expertes/mastere-specialiser-cybersecurite-systemes-complexes-industrie/"
+icon = "./assets/images/cea.png"
+timeline = "09/2023 - 10/2024"
+description = "En partenariat avec le Commissariat à l’Énergie Atomique et aux Énergies Alternatives (CEA) et le Commandement de la Cyberdéfense (COMCYBER). Cette formation post-master (bac +6, certifiée par l’ANSSI) est dédiée aux problématiques de cybersécurité dans les systèmes de l’industrie et de la Défense."
+
+
+############## Experience config ################
+#################################################
+[[experience]]
+title = "Développeur Full-stack"
+link = "https://www.syselio.com/"
+icon = "./assets/images/syselio.jpg"
+timeline = "2019 - 2021"
+description = "2 stages de 6 mois réalisés entre 2019 et 2021 pour la société de prestation de service informatique monégasque Syselio. Dévelopement en javascript et ASP.NET sur les sites en ligne de la société"
+
+[[experience]]
+title = "Développeur Full-stack"
+link = "https://livmeds.com/"
+icon = "./assets/images/livmed.png"
+timeline = "08/2022 - 08/2023"
+description = "6 mois de stage et 7 mois de CDD réalisés auprès de la startup Livmed's dans le cadre de ma cinquième et dernière année d'études à Epitech. Dévelopement en javascript sur les interfaces web, mobile et backend de la société (ReactJS - ReactNative - NodeJS)"
+
+[[experience]]
+title = "Ingénieur Cybersécurité"
+link = "https://amsn.gouv.mc/"
+icon = "./assets/images/amsn.png"
+timeline = "04/2024 - 10/2024"
+description = "Stage de 6 mois réalisé dans le cadre de mon Mastère Spécialisé (CYBERSCID) à l’agence national de cybersécurité de l’Etat de Monaco (équivalent de l’ANSSI Français). Réalisation de missions de développement en soutien des capacités opérationnelles du CERT-MC (Développement Python, usage de MISP et Suricata)."
+
+### social ###
+# https://ionic.io/ionicons
+# <ion-icon name="[[name]]"></ion-icon>
+# name = "https://example.com/"
+
+logo-linkedin = "https://www.linkedin.com/in/baptiste-nouailhac"
+logo-github = "https://github.com/BNouailhac"
+
+### softskills ###
+############### Section config ##################
+#################################################
+[softskills]
+title = "Soft Skills"
+
+################ Skills #########################
+#################################################
+[[skills]]
+title = "Apprendre vite"
+icon = "./config/assets/icons/bolt.svg"
+text = "Je suis capable d'acquérir rapidement de nouvelles connaissances et de m'adapter à des environnements technologiques changeants."
+
+[[skills]]
+title = "Travail d'équipe"
+icon = "./config/assets/icons/user.svg"
+text = "Je collabore efficacement à des projets multidisciplinaires et je communique clairement avec les membres de l'équipe."
+
+[[skills]]
+title = "Résolution de problèmes"
+icon = "./config/assets/icons/gear.svg"
+text = "Je suis créatif et efficace dans l'identification et la résolution des problèmes techniques."
+
+[[skills]]
+title = "Communication efficace"
+icon = "./config/assets/icons/comment.svg"
+text = "Je suis capable de transmettre des idées de manière claire et concise, tant sur le plan technique que non technique."
+
+### technologies ###
+############### Section config ##################
+#################################################
+[tech]
+title = "Technologies"
+
+############### Technologies ####################
+#################################################
+# Technology I have worked with
+# name = "./.../../icon_path"
+[technologies]
+python = "./config/assets/icons/python.svg"
+flutter = "./config/assets/icons/flutter.svg"
+git = "./config/assets/icons/git.svg"
+firebase = "./config/assets/icons/firebase.svg"
+pandas = "./config/assets/icons/pandas.svg"
+mongodb = "./config/assets/icons/mongodb.svg"
+dart = "./config/assets/icons/dart.svg"
+html = "./config/assets/icons/html.svg"
+jupyter = "./config/assets/icons/jupyter.svg"
+linux = "./config/assets/icons/linux.svg"

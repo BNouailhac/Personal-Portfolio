@@ -1,0 +1,270 @@
+<!-- resume.jinja -->
+<article class="resume active" data-page="resume">
+
+  <header>
+    <h2 class="fr h2 article-title">{{fr.resu}}</h2>
+    <h2 class="en h2 article-title">{{en.resu}}</h2>
+  </header>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+
+      <h3 class="fr h3">{{fr.exp}}</h3>
+      <h3 class="en h3">{{en.exp}}</h3>
+    </div>
+
+    <ol class="fr timeline-list">
+
+      {% for experience in fr.experience | reverse %}
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="{{experience.link}}" target="_blank">
+          <img src="{{experience.icon}}" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">{{experience.title}}</h4>
+        </a>
+
+        <span>{{experience.timeline}}</span>
+
+        <p class="timeline-text">
+          {{experience.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+    <ol class="en timeline-list">
+
+      {% for experience in en.experience | reverse %}
+
+      <li class="timeline-item">
+        <a class="linkInfo" href="{{experience.link}}" target="_blank">
+          <img src="{{experience.icon}}" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">{{experience.title}}</h4>
+        </a>
+
+        <span>{{experience.timeline}}</span>
+
+        <p class="timeline-text">
+          {{experience.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+  </section>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="school-outline"></ion-icon>
+      </div>
+
+      <h3 class="fr h3">{{fr.edu}}</h3>
+      <h3 class="en h3">{{en.edu}}</h3>
+    </div>
+
+    <ol class="fr timeline-list">
+
+      {% for education in fr.education | reverse %}
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="{{education.link}}" target="_blank">
+          <img src="{{education.icon}}" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">{{education.title}}</h4>
+        </a>
+        
+
+        <span>{{education.timeline}}</span>
+
+        <p class="timeline-text">
+          {{education.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+    <ol class="en timeline-list">
+
+      {% for education in en.education | reverse %}
+
+      <li class="timeline-item">
+
+        <a class="linkInfo" href="{{education.link}}" target="_blank">
+          <img src="{{education.icon}}" style="margin-top: -7.5px;" alt="client logo" width="35" height="35">
+          <h4 class="h4 timeline-item-title">{{education.title}}</h4>
+        </a>
+        
+
+        <span>{{education.timeline}}</span>
+
+        <p class="timeline-text">
+          {{education.description}}
+        </p>
+
+      </li>
+
+      {% endfor %}
+
+    </ol>
+
+  </section>
+
+  <!--
+          - clients
+        -->
+  <section class="fr testimonials">
+
+    <h3 class="h3 clients-title">{{fr.tech.title}}</h3>
+
+    <ul class="clients-list has-scrollbar">
+      {% for icon in fr.technologies.values() %}
+
+      <li class="clients-item">
+        <img src="{{icon}}" alt="client logo" width="50" height="50">
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+  <section class="en testimonials">
+
+    <h3 class="h3 clients-title">{{en.tech.title}}</h3>
+
+    <ul class="clients-list has-scrollbar">
+      {% for icon in en.technologies.values() %}
+
+      <li class="clients-item">
+        <img src="{{icon}}" alt="client logo" width="50" height="50">
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </section>
+
+  <!--
+    - testimonials
+  -->
+  <section class="fr testimonials">
+
+    <h3 class="h3 testimonials-title">{{fr.softskills.title}}</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+      {% for skill in fr.skills %}
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="{{skill.icon}}" alt="{{skill.title}}" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{skill.title}}</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              {{skill.text}}
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      {% endfor %}
+
+      < </ul>
+
+  </section>
+
+  <section class="en testimonials">
+
+    <h3 class="h3 testimonials-title">{{en.softskills.title}}</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+      {% for skill in en.skills %}
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="{{skill.icon}}" alt="{{skill.title}}" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>{{skill.title}}</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              {{skill.text}}
+            </p>
+          </div>
+
+        </div>
+      </li>
+
+      {% endfor %}
+
+      < </ul>
+
+  </section>
+
+  <!--
+          - testimonials modal
+        -->
+
+  <div class="modal-container" data-modal-container>
+
+    <div class="overlay" data-overlay></div>
+
+    <section class="testimonials-modal">
+
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img alt="{{en.name}}" width="80" data-modal-img>
+        </figure>
+
+        <img src="./assets/images/icon-quote.svg" alt="quote icon">
+      </div>
+
+      <div class="modal-content">
+
+        <h4 class="fr h3 modal-title" data-modal-title>{{fr.name}}</h4>
+        <h4 class="en h3 modal-title" data-modal-title>{{en.name}}</h4>
+
+        {# <time datetime="2021-06-14">14 June, 2021</time> #}
+
+        <div data-modal-text>
+          <p>
+            {# lorem #}
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>

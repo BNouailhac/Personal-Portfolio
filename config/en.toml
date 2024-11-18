@@ -1,0 +1,126 @@
+### ABOUT ###
+name = "Nouailhac Baptiste"
+rol = "Cybersecurity Engineer"
+conta = "Show Contacts"
+emailtitle = "EMAIL"
+email = "baptiste.nouailhac@pm.me"
+birthdaytitle = "BIRTHDAY"
+birthday = "11 mars 2000"
+locationtitle = "LOCATION"
+location = "Monaco"
+avatar = "./config/assets/avatars/my-avatar.png"
+username = "BNouailhac" # <-- github user name
+cvdownload = "Download my CV"
+
+presentation = "Professional thesis produced in 6 months during an internship at the Agence Monégasque de Sécurité Numérique (AMSN) and written in Latex. Subject: ‘How to set up an automated tool for generating intrusion detection rules’."
+
+resu = "Resume"
+exp = "Experience"
+edu = "Education"
+thes = "Thesis"
+
+### RESUME ###
+############## Education config #################
+#################################################
+[[education]]
+title = "Information technology expert qualification (Master degree)"
+link = "https://www.epitech.eu/programme-grande-ecole-informatique/"
+icon = "./assets/images/epitech.jpg"
+timeline = "2018 - 2023"
+description = "A curriculum comprising almost 80 projects, enabling you to acquire very solid skills in all areas of IT. A degree course specialising in software development"
+
+[[education]]
+title = "Graduate Student Program"
+link = "http://en.njtu.edu.cn/"
+icon = "./assets/images/bjtu.png"
+timeline = "08/2021 - 02/2022"
+description = "As part of my fourth year of studies at EPITECH, I had the opportunity to study for a semester at Beijing Jiaotong University. This was an opportunity for me to develop a number of advanced IT skills in a new and enriching environment."
+
+[[education]]
+title = "Mastère Spécialisé® Cybersecurity for complex systems Industry and Defence (CYBERSCID)"
+link = "https://www.centrale-mediterranee.fr/fr/formation/formations-expertes/mastere-specialiser-cybersecurite-systemes-complexes-industrie"
+icon = "./assets/images/cea.png"
+timeline = "09/2023 - 10/2024"
+description = "In partnership with the French Atomic Energy and Alternative Energies Commission (CEA) and the Cyberdefence Command (COMCYBER). This post-master's course (bac +6, certified by the ANSSI) is dedicated to cybersecurity issues in industrial and defence systems."
+
+
+############## Experience config ################
+#################################################
+[[experience]]
+title = "Full-stack Developer"
+link = "https://www.syselio.com/"
+icon = "./assets/images/syselio.jpg"
+timeline = "2019 - 2021"
+description = "2 six-month internships between 2019 and 2021 for the Monegasque IT services company Syselio. Development in Javascript and ASP.NET of the company's online sites"
+
+[[experience]]
+title = "Full-stack Developer"
+link = "https://livmeds.com/"
+icon = "./assets/images/livmed.png"
+timeline = "08/2022 - 08/2023"
+description = "6-month internship and 6-month fixed-term contract with the Livmed's startup as part of my fifth and final year of studies at Epitech. Javascript development on the company's web, mobile and backend interfaces (ReactJS - ReactNative - NodeJS)"
+
+[[experience]]
+title = "Cybersecurity Engineer"
+link = "https://amsn.gouv.mc/"
+icon = "./assets/images/amsn.png"
+timeline = "04/2024 - 10/2024"
+description = "6-month internship as part of my Specialised Masters (CYBERSCID) at the national cybersecurity agency of the State of Monaco (equivalent to the French ANSSI). Development missions to support the CERT-MC's operational capabilities (Python development, use of MISP and Suricata)."
+
+### social ###
+# https://ionic.io/ionicons
+# <ion-icon name="[[name]]"></ion-icon>
+# name = "https://example.com/"
+
+logo-linkedin = "https://www.linkedin.com/in/baptiste-nouailhac"
+logo-github = "https://github.com/BNouailhac"
+
+### softskills ###
+############### Section config ##################
+#################################################
+[softskills]
+title = "Soft Skills"
+
+################ Skills #########################
+#################################################
+[[skills]]
+title = "Fast Learner"
+icon = "./config/assets/icons/bolt.svg"
+text = "I have the ability to quickly acquire new knowledge and adapt to changing technological environments."
+
+[[skills]]
+title = "Teamwork"
+icon = "./config/assets/icons/user.svg"
+text = "I collaborate effectively in multidisciplinary projects and communicate clearly with team members."
+
+[[skills]]
+title = "Problem Solving"
+icon = "./config/assets/icons/gear.svg"
+text = "I am creative and efficient in identifying and solving technical problems."
+
+[[skills]]
+title = "Effective Communication"
+icon = "./config/assets/icons/comment.svg"
+text = "I have the skill to convey ideas clearly and concisely, both technically and non-technically."
+
+### technologies ###
+############### Section config ##################
+#################################################
+[tech]
+title = "Tech Experience"
+
+############### Technologies ####################
+#################################################
+# Technology I have worked with
+# name = "./.../../icon_path"
+[technologies]
+python = "./config/assets/icons/python.svg"
+flutter = "./config/assets/icons/flutter.svg"
+git = "./config/assets/icons/git.svg"
+firebase = "./config/assets/icons/firebase.svg"
+pandas = "./config/assets/icons/pandas.svg"
+mongodb = "./config/assets/icons/mongodb.svg"
+dart = "./config/assets/icons/dart.svg"
+html = "./config/assets/icons/html.svg"
+jupyter = "./config/assets/icons/jupyter.svg"
+linux = "./config/assets/icons/linux.svg"
