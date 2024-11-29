@@ -10,4 +10,4 @@ My own fully responsive Portfolio website developed in Jinja.
 ![Jinja](https://img.shields.io/badge/Jinja-c4302b?logo=Jinja&logoColor=white)
 
 ## Demo
-you can test the application online through this link : https://baptiste-nouailhac-portfolio.web.app
+you can test the application online through this link : [https://baptiste-nouailhac-portfolio.web.app](https://bnouailhac.github.io/Personal-Portfolio/)
