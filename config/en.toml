@@ -106,6 +106,8 @@ text = "I have the skill to convey ideas clearly and concisely, both technically
 ### technologies ###
 ############### Section config ##################
 #################################################
+[cert]
+title = "Certifications"
 [tech]
 title = "Tech Experience"
 
@@ -113,6 +115,11 @@ title = "Tech Experience"
 #################################################
 # Technology I have worked with
 # name = "./.../../icon_path"
+[certifications]
+ccna1 = "./config/assets/icons/CCNAITN__1_.png"
+ccna2 = "./config/assets/icons/CCNASRWE__1_.png"
+ccnans = "./config/assets/icons/Network_Security.png"
+first = "./config/assets/icons/first.jpg"
 [technologies]
 python = "./config/assets/icons/python.svg"
 flutter = "./config/assets/icons/flutter.svg"
