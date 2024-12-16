@@ -86,7 +86,7 @@ title = "Soft Skills"
 ################ Skills #########################
 #################################################
 [[skills]]
-title = "Apprendre vite"
+title = "Adaptation"
 icon = "./config/assets/icons/bolt.svg"
 text = "Je suis capable d'acquérir rapidement de nouvelles connaissances et de m'adapter à des environnements technologiques changeants."
 
@@ -121,7 +121,6 @@ title = "Technologies"
 ccna1 = "./config/assets/icons/CCNAITN__1_.png"
 ccna2 = "./config/assets/icons/CCNASRWE__1_.png"
 ccnans = "./config/assets/icons/Network_Security.png"
-first = "./config/assets/icons/first.jpg"
 [technologies]
 python = "./config/assets/icons/python.svg"
 flutter = "./config/assets/icons/flutter.svg"

@@ -837,6 +837,21 @@ main {
   scroll-padding-inline: 25px;
 }
 
+.cert-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
@@ -1215,6 +1230,13 @@ main {
   /* clients */
 
   .clients-list {
+    gap: 50px;
+    margin: 0 -30px;
+    padding: 30px;
+    scroll-padding-inline: 45px;
+  }
+
+  .cert-list {
     gap: 50px;
     margin: 0 -30px;
     padding: 30px;
